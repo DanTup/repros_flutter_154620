@@ -1,0 +1,4 @@
+- Run `flutter create . --platforms=web --empty` to get a 'web' folder
+- Run `flutter pub get` to get packages
+- Modify `flutterBin` at the top of `tool/build_and_serve.dart` to point at your `flutter` binary
+- Run `dart tool/build_and_serve.dart` to build the app and serve it through a local server

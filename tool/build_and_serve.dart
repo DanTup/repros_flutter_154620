@@ -71,5 +71,7 @@ Future<void> main() async {
 
   final url = 'http://${server.address.address}:${server.port}/$proxyPrefix';
   print('App is available at $url');
-  await Process.run('start', [url], runInShell: true);
+  if (Platform.isWindows) {
+    await Process.run('start', [url], runInShell: true);
+  }
 }
