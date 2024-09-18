@@ -1,0 +1,7 @@
+.dart_tool/
+.idea/
+build/
+web/
+*.iml
+pubspec.lock
+.metadata
